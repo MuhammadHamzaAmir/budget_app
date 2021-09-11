@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_text"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Budget:"
+        android:textSize="75px"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/budget_set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_text"
+        android:text="Set BUDGET"
+        android:textSize="50px" />
+
+    <EditText
+        android:id="@+id/budget_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/budget_text"
+        android:layout_toEndOf="@id/budget_set_button"
+        android:layout_marginStart="10dp"
+        android:hint="Total Budget"/>
+
+    <Button
+        android:id="@+id/days_set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_set_button"
+        android:text="Set Days"
+        android:textSize="50px" />
+
+    <EditText
+        android:id="@+id/days_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_input"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/budget_set_button"
+        android:ems="10"
+        android:hint="Total Days"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days_text"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/days_input"
+        android:text="Days:"
+        android:textSize="75px"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/days_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/days_text"
+        android:text="Days Minus-1"
+        android:textSize="50px"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/spend_set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/days_minus"
+        android:text="Spent today"
+        android:textSize="50px" />
+
+    <EditText
+        android:id="@+id/spent_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/days_minus"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/spend_set_button"
+        android:ems="10"
+        android:hint="Spent Today"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spend_set_button"
+        android:text="Calculate"
+        android:textSize="50px"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_result"
+        android:gravity="center"
+        android:layout_below="@id/spent_input"
+        android:layout_toEndOf="@id/budget_set_button"
+        android:layout_marginStart="10dp"
+        android:text="Per Day:"
+        android:textSize="75px"
+        >
+    </TextView>
+
+
+</RelativeLayout>
