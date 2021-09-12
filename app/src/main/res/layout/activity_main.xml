@@ -7,16 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/budget_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/budget_text"
         android:layout_alignParentTop="true"
-        android:gravity="center"
         android:layout_centerInParent="true"
+        android:gravity="center"
         android:text="Budget:"
-        android:textSize="75px"
-        >
-    </TextView>
+        android:textSize="75px"></TextView>
 
     <Button
         android:id="@+id/budget_set_button"
@@ -30,12 +28,12 @@
         android:id="@+id/budget_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
         android:layout_below="@id/budget_text"
-        android:layout_toEndOf="@id/budget_set_button"
         android:layout_marginStart="10dp"
-        android:hint="Total Budget"/>
+        android:layout_toEndOf="@id/budget_set_button"
+        android:ems="10"
+        android:hint="Total Budget"
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/days_set_button"
@@ -57,27 +55,24 @@
         android:inputType="numberDecimal" />
 
     <TextView
+        android:id="@+id/days_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/days_text"
-        android:gravity="center"
-        android:layout_centerInParent="true"
         android:layout_below="@id/days_input"
+        android:layout_centerInParent="true"
+        android:gravity="center"
         android:text="Days:"
-        android:textSize="75px"
-        >
-    </TextView>
+        android:textSize="75px"></TextView>
 
     <Button
         android:id="@+id/days_minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/days_text"
-        android:text="Days Minus-1"
-        android:textSize="50px"
-        android:gravity="center"
         android:layout_centerInParent="true"
-        />
+        android:gravity="center"
+        android:text="Days Minus-1"
+        android:textSize="50px" />
 
     <Button
         android:id="@+id/spend_set_button"
@@ -103,23 +98,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/spend_set_button"
-        android:text="Calculate"
-        android:textSize="50px"
         android:gravity="center"
-        />
+        android:text="Calculate"
+        android:textSize="50px" />
 
     <TextView
+        android:id="@+id/text_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_result"
-        android:gravity="center"
         android:layout_below="@id/spent_input"
-        android:layout_toEndOf="@id/budget_set_button"
         android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/budget_set_button"
+        android:gravity="center"
         android:text="Per Day:"
-        android:textSize="75px"
-        >
-    </TextView>
+        android:textSize="75px" />
 
 
 </RelativeLayout>
