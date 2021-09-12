@@ -161,7 +161,7 @@ public class backend extends Application {
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://budget-app-fb18f-default-rtdb.europe-west1.firebasedatabase.app/");
         String vals = database.getReference("budget").toString();
         Log.w("daabse",vals);
-        DatabaseReference myRef = database.getReference().child("budget");
+        DatabaseReference myRef = database.getReference().child("days");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
